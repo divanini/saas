@@ -1,6 +1,6 @@
 const logo1 = document.querySelector('.container__logo');
 logo1.onclick = function() {
-  window.location.href = "http://127.0.0.1:5500/html/home.html"
+  window.location.href = "https://divanini.github.io/saas/html/home.html"
 }
 
 const password = document.querySelector('.container__form-password')
