@@ -1,3 +1,8 @@
+const logo1 = document.querySelector('.container__logo');
+logo1.onclick = function() {
+  window.location.href = "http://127.0.0.1:5500/html/home.html"
+}
+
 const password = document.querySelector('.container__form-password')
 const checkbox = document.querySelector('input[type="checkbox"]');
 checkbox.addEventListener('change', () => {
@@ -30,3 +35,5 @@ document.addEventListener("DOMContentLoaded", function() {
             .catch(error => console.error("Error fetching data.json:", error));
     });
 });
+
+
