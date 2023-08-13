@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", function() {
     loginButton.addEventListener("click", function() {
         const usernameInput = document.querySelector(".container__form-name");
         const passwordInput = document.querySelector(".container__form-password");
-        fetch("../user/data.json")
+        fetch("user/data.json")
             .then(response => response.json())
             .then(data => {
                 const enteredUsername = usernameInput.value;
@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 const matchingUser = data.find(user => user.username === enteredUsername && user.password === enteredPassword);
 
                 if (matchingUser) {
-                    window.location.href = "home.html";
+                    window.location.href = "html/home.html";
                 } else {
                     location.reload()
                 }
