@@ -3,6 +3,13 @@ logo1.onclick = function() {
   window.location.href = "https://divanini.github.io/saas/html/home.html"
 }
 
+const arrowToCareer = document.querySelectorAll('.career__arrow');
+arrowToCareer.forEach(button => {
+  button.onclick = function() {
+    window.location.href = "https://divanini.github.io/saas/html/features.html";
+  }
+});
+
 const password = document.querySelector('.container__form-password')
 const checkbox = document.querySelector('input[type="checkbox"]');
 checkbox.addEventListener('change', () => {

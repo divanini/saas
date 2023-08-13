@@ -400,3 +400,138 @@ footer {
 .container__logo {
     cursor: pointer;
 }
+
+.office {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.office__hero {
+    color: var(--primary-purple-normal, #7F56D9);
+    font-family: 'Manrope', sans-serif;
+    letter-spacing: -0.75px;
+    border-radius: 22px;
+    border: 1px solid #EEE2FE;
+    background: linear-gradient(90deg, #E9D8FF 0%, rgba(255, 255, 255, 0.00) 100%, #29252E 100%);
+    display: inline-block;
+    padding: 5px 15px;
+}
+
+.office__title {
+    color: #1B152B;
+    font-family: 'Inter', sans-serif;
+    font-size: 48px;
+    letter-spacing: -3.827px;
+    margin-top: 1rem;
+}
+
+.office__text {
+    color: var(--text-grey, #7A7D9C);
+    padding-inline: 220px;
+    margin-top: 1rem;
+    font-family: 'Manrope', sans-serif;
+    letter-spacing: -0.75px;
+}
+
+.office__wrapper {
+    margin-top: 1rem;
+    background-color: white;
+    display: flex;
+    border-radius: 16px;
+    border: 1px solid #EFF0F6;
+    justify-content: space-between;
+    padding: 47px 65px;
+    width: 99%;
+    margin-inline: auto;
+    text-align: left;
+}
+
+.office__item-city {
+    margin-top: 1rem;
+    color: var(--primary-purple-normal, #7F56D9);
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    letter-spacing: -0.96px;
+}
+
+.office__item-location {
+    margin-top: 0.5rem;
+    color: var(--text-grey, #7A7D9C);
+    font-family: 'Inter', sans-serif;
+    letter-spacing: -0.96px;
+}
+
+.office__item-num {
+    color: var(--text-dark-blue, #1B152B);
+    font-family: 'Inter', sans-serif;
+    letter-spacing: -0.96px;
+    margin-top: 0.6rem;
+}
+
+.office__btn-box {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.office__sign-up {
+    border-radius: 20px;
+    background: #1B152B;
+    padding: 8px 30px;
+    color: #FFF;
+    font-family: 'Inter', sans-serif;
+    letter-spacing: -0.96px;
+}
+
+.office__contact-us {
+    padding: 8px 30px;
+    border-radius: 20px;
+    background: #7F56D9;
+    color: #FFF;
+    font-family: 'Inter', sans-serif;
+    letter-spacing: -0.96px;
+}
+
+.office__item-img {
+    width: 90%;
+}
+
+@media (max-width: 50em) {
+    .office__wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .office__item-img {
+        width: 90%;
+        margin-top: 10px;
+    }
+
+    .office__title {
+        font-size: 36px;
+    }
+
+    .office__text {
+        padding-inline: 50px;
+    }
+}
+
+@media (max-width: 25em) {
+    .office__title {
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        letter-spacing: normal;
+    }
+
+    .office__text {
+        padding-inline: 20px;
+    }
+
+    .office__item-img {
+        width: 120%;
+    }
+}
